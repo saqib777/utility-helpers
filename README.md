@@ -1,4 +1,8 @@
-# Utility Helpers
+<div align= "center">
+  
+  # Utility Helpers
+  
+</div>
 
 A growing collection of **simple, reusable Python utility functions** designed to make everyday coding cleaner and faster. Each utility is explained in plain English, with real examples, use cases, and beginner-friendly explanations.
 
