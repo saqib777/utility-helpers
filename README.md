@@ -4,6 +4,9 @@
   
 </div>
 
+<img width="1024" height="1024" alt="ChatGPT Image Nov 9, 2025, 12_21_08 PM" src="https://github.com/user-attachments/assets/8694b5a9-b716-46b6-8dda-e53faeae5c02" />
+
+
 A growing collection of **simple, reusable Python utility functions** designed to make everyday coding cleaner and faster. Each utility is explained in plain English, with real examples, use cases, and beginner-friendly explanations.
 
 ---
