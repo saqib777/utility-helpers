@@ -12,7 +12,7 @@ This repository is meant for anyone learning Python or building automation/testi
 * **Math Helpers** → number logic, calculations, and small formulas.
 * **File Helpers** → reading, writing, and organizing data.
 
-Each helper is intentionally small and readable — built to teach good programming habits while being practical enough to reuse in projects.
+Each helper is intentionally small and readable - built to teach good programming habits while being practical enough to reuse in projects.
 
 ---
 
