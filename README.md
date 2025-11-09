@@ -108,7 +108,7 @@ This project was created to:
 * Serve as a go-to **learning reference** for Python basics
 * Offer a library of **reusable helpers** for testing, scripting, or quick automation
 
-Every file is written with clarity, real examples, and comments that explain *why* things are done a certain way — not just *how*.
+Every file is written with clarity, real examples, and comments that explain *why* things are done a certain way - not just *how*.
 
 ---
 
@@ -132,4 +132,4 @@ If you’d like to contribute, feel free to fork the repo and submit a pull requ
 ---
 
 **Created and maintained by [Mohammed Saqib](https://github.com/saqib777)**
-*"Keep learning. Keep building small, clean things — they add up."*
+*"Keep learning. Keep building small, clean things - they add up."*
