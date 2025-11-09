@@ -100,7 +100,7 @@ print(reverse_string("Hello World"))  # Output: dlroW olleH
 
 ---
 
-## hy This Repo Exists
+## Why This Repo Exists
 
 This project was created to:
 
