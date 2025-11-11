@@ -72,31 +72,33 @@ print(reverse_string("Hello World"))  # Output: dlroW olleH
 
 ### String Helpers
 
-| Utility                      | Description                           | Example                       |
-| ---------------------------- | ------------------------------------- | ----------------------------- |
-| `reverse_string(text)`       | Reverses a given string               | `Hello → olleH`               |
-| `capitalize_each_word(text)` | Capitalizes first letter of each word | `hello world → Hello World`   |
-| `remove_whitespace(text)`    | Cleans up extra spaces/tabs/newlines  | `Hello   World → Hello World` |
-| `is_palindrome(text)`        | Checks if text reads same backward    | `madam → True`                |
-| `count_vowels(text)`         | Counts number of vowels in a string   | `Saqib → 2`                   |
+| Utility | Description | Example |
+|----------|--------------|----------|
+| `reverse_string(text)` | Reverses a given string | `Hello → olleH` |
+| `capitalize_each_word(text)` | Capitalizes first letter of each word | `hello world → Hello World` |
+| `remove_whitespace(text)` | Cleans up extra spaces/tabs/newlines | `Hello   World → Hello World` |
+| `is_palindrome(text)` | Checks if text reads same backward | `madam → True` |
+| `count_vowels(text)` | Counts number of vowels in a string | `Saqib → 2` |
+| `count_words(text)` | Counts total words in a string | `Python helpers rock → 3` |
+| `count_characters(text)` | Counts total characters (with or without spaces) | `Hello World → 11` |
 
 ---
 
-### Math Helpers
+###  Math Helpers
 
-| Utility        | Description                      |
-| -------------- | -------------------------------- |
+| Utility | Description |
+|----------|--------------|
 | `factorial(n)` | Calculates factorial of a number |
-| `is_prime(n)`  | Checks if a number is prime      |
+| `is_prime(n)` | Checks if a number is prime |
 
 ---
 
-### File Helpers
+###  File Helpers
 
-| Utility                      | Description               |
-| ---------------------------- | ------------------------- |
-| `read_file(filepath)`        | Reads file content safely |
-| `write_file(filepath, data)` | Writes data into a file   |
+| Utility | Description |
+|----------|--------------|
+| `read_file(filepath)` | Reads file content safely |
+| `write_file(filepath, data)` | Writes data into a file |
 
 ---
 
