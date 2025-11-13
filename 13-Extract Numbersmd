@@ -1,0 +1,138 @@
+## Utility 13: Extract Numbers
+
+### What It Does
+
+This helper extracts all numeric digits or full numbers from a given text. It can return numbers as a string, a list of separated numbers, or even convert them into integers. This is useful when processing logs, forms, IDs, quantities, or any text where numbers matter.
+
+Example:
+
+* Input: "Order 245 shipped on 2025-11-13"
+* Output: ["245", "2025", "11", "13"]
+
+---
+
+### Explanation
+
+Numbers appear in text frequently. Sometimes you want to pull them out while ignoring the rest. Python makes this simple using regular expressions, list comprehensions, or manual loops.
+
+We’ll cover:
+
+1. Extracting individual digits
+2. Extracting full numbers
+3. Extracting and converting numbers into integers
+
+---
+
+### Code Examples
+
+#### Method 1: Extract All Digits
+
+```python
+import re
+
+def extract_digits(text):
+    """
+    Extract individual digits from the text.
+    Returns a list of digits as strings.
+    """
+    return re.findall(r"\d", text)
+
+# Example
+print(extract_digits("Room 101 on floor 2"))  # Output: ['1', '0', '1', '2']
+```
+
+This is helpful if you only need single digits.
+
+---
+
+#### Method 2: Extract Full Numbers
+
+```python
+import re
+
+def extract_numbers(text):
+    """
+    Extract full numbers from text.
+    Returns a list of numeric strings.
+    """
+    return re.findall(r"\d+", text)
+
+# Example
+print(extract_numbers("Order 245 shipped on 2025-11-13"))
+# Output: ['245', '2025', '11', '13']
+```
+
+This approach captures multi-digit values as complete numbers.
+
+---
+
+#### Method 3: Extract Numbers as Integers
+
+```python
+import re
+
+def extract_numbers_as_int(text):
+    """
+    Extract numbers and convert them into integers.
+    """
+    return [int(num) for num in re.findall(r"\d+", text)]
+
+# Example
+print(extract_numbers_as_int("ID 4001: value increased by 37"))
+# Output: [4001, 37]
+```
+
+Useful when numbers will be used in calculations.
+
+---
+
+#### Method 4: Extract Decimal or Floating Numbers
+
+```python
+import re
+
+def extract_floats(text):
+    """
+    Extract floating point numbers, including decimals.
+    """
+    return re.findall(r"\d+\.\d+", text)
+
+# Example
+print(extract_floats("The ratio is 3.14 and the score is 99.5"))
+# Output: ['3.14', '99.5']
+```
+
+This helps when handling measurements or precise values.
+
+---
+
+### Real-Life Use Case
+
+Extracting numbers is common when cleaning data from logs, forms, or web scraping. For example, extracting all numerical IDs from a line of text:
+
+```python
+def extract_ids(text):
+    return extract_numbers_as_int(text)
+
+print(extract_ids("Users: 104, 209, 330 active today"))
+# Output: [104, 209, 330]
+```
+
+This allows you to separate meaningful numeric data from mixed text.
+
+---
+
+### Summary
+
+| Method           | Technique           | Pros                  | Best For                |
+| ---------------- | ------------------- | --------------------- | ----------------------- |
+| Digit extraction | Regex `\d`          | Gets single digits    | Simple logs or codes    |
+| Full numbers     | Regex `\d+`         | Gets complete numbers | General text processing |
+| Integer list     | Convert via `int()` | Ready for math use    | Calculations            |
+| Extract floats   | Regex for decimals  | Gets precise values   | Measurements, stats     |
+
+---
+
+### Next Step
+
+Next, we can create Utility 14: extract_words(text) to isolate and return only alphabetic words from any given string.
