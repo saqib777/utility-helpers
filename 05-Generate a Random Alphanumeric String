@@ -1,0 +1,25 @@
+## Utility 105: Generate a Random Alphanumeric String
+
+This utility generates a random alphanumeric string of a given length.
+Useful for test data, temporary IDs, and dummy values.
+
+### Use cases
+- Generating test usernames
+- Temporary tokens
+- Random identifiers in automation
+
+### Code
+
+```python
+import random
+import string
+
+def generate_random_string(length=8):
+    """
+    Generates a random alphanumeric string.
+    """
+    if length <= 0:
+        return ""
+
+    characters = string.ascii_letters + string.digits
+    return "".join(random.choice(characters) for _ in range(length))
